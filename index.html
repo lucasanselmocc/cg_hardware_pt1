@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hardware Evolution in Computer Graphics — Part 1</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="background-grid" aria-hidden="true"></div>
+  <header class="hero">
+    <p class="eyebrow">Computação Gráfica · Evolução de Hardware · Parte 1</p>
+    <h1>Do CRT aos primeiros aceleradores 3D</h1>
+    <p class="question">Como passamos de tubos de raios catódicos e plots de caneta para os primeiros aceleradores 3D?</p>
+    <div class="thesis-strip" aria-label="Arco histórico"><span>CRT</span><span>Interação</span><span>Framebuffer</span><span>Padronização PC</span><span>Aceleração 3D</span><span>GPU</span></div>
+  </header>
+
+  <main>
+
+    <section class="carousel-shell" aria-label="Timeline por décadas">
+      <div class="carousel-top">
+        <button class="arrow" id="prevDecade" type="button" aria-label="Década anterior">‹</button>
+        <p id="decadeReadout">1950s</p>
+        <button class="arrow" id="nextDecade" type="button" aria-label="Próxima década">›</button>
+      </div>
+      <div class="decade-track" id="decadeTrack" tabindex="0"></div>
+    </section>
+
+    <section class="decade-panel" id="decadePanel" aria-live="polite">
+      <div class="panel-intro">
+        <div><p class="panel-kicker" id="panelKicker"></p><h2 id="panelTitle"></h2></div>
+        <p id="panelThesis"></p>
+      </div>
+      <div class="bottleneck-card"><span>Gargalo da década</span><p id="panelBottleneck"></p></div>
+      <div class="milestone-sections">
+        <section><div class="section-title primary-title"><h3>Marcos principais</h3><p>Vídeo local incorporado.</p></div><div class="milestone-grid" id="mainGrid"></div></section>
+        <section><div class="section-title"><h3>Trilhas secundárias</h3><p>Links externos para estudo.</p></div><div class="milestone-grid secondary-grid" id="secondaryGrid"></div></section>
+      </div>
+    </section>
+
+    <section class="detail-panel" id="detailPanel" aria-live="polite">
+      <div class="detail-copy">
+        <p class="detail-meta" id="detailMeta"></p>
+        <h2 id="detailTitle"></h2>
+        <p class="detail-role" id="detailRole"></p>
+        <div class="detail-fields">
+          <article><h3>Problema técnico</h3><p id="detailProblem"></p></article>
+          <article><h3>Substituiu ou competiu com</h3><p id="detailReplaces"></p></article>
+          <article><h3>Impacto arquitetural</h3><p id="detailImpact"></p></article>
+          <article><h3>Ligação com a pergunta central</h3><p id="detailCentral"></p></article>
+        </div>
+      </div>
+      <div class="media-shell">
+        <div id="mediaMount"></div>
+        <p id="mediaLabel"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>Os cards dourados são os marcos centrais. As trilhas secundárias foram incluídas para aprofundamento sem sobrecarregar a apresentação oral.</p></footer>
+  <script src="assets/js/timeline-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
