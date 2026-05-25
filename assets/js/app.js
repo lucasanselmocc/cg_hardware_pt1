@@ -28,9 +28,18 @@ const detail = {
 let activeDecade = 0;
 
 function tone(index) {
-  return ["rgba(125,211,252,.20)","rgba(167,139,250,.20)","rgba(34,197,94,.18)","rgba(96,165,250,.20)","rgba(251,113,133,.18)"][index % 5];
+  return [
+    "rgba(168, 90, 24, .30)",
+    "rgba(255, 196, 90, .28)",
+    "rgba(56, 255, 112, .20)",
+    "rgba(0, 229, 255, .20)",
+    "rgba(0, 0, 128, .22)"
+  ][index % 5];
 }
 
+function applyDecadeTheme(decade) {
+  document.body.dataset.decade = decade.id;
+}
 
 function buildDecadeCards() {
   track.innerHTML = "";
@@ -71,6 +80,8 @@ function setDecade(index, jump) {
   if (!decade) return;
 
   activeDecade = index;
+  applyDecadeTheme(decade);
+
   readout.textContent = decade.decade;
   panel.kicker.textContent = `${decade.decade} · ${decade.arc}`;
   panel.title.textContent = decade.headline;
@@ -90,8 +101,15 @@ function setDecade(index, jump) {
   if (decade.main[0]) setMilestone(decade.main[0].id, false);
 
   if (jump) {
-    track.querySelector(`[data-index="${index}"]`)?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    document.getElementById("decadePanel").scrollIntoView({ behavior: "smooth", block: "start" });
+    track.querySelector(`[data-index="${index}"]`)?.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest"
+    });
+    document.getElementById("decadePanel").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
   }
 }
 
@@ -123,7 +141,11 @@ function renderMedia(item) {
       </div>
     `;
     detail.mediaLabel.textContent = "";
+    return;
   }
+
+  detail.mediaMount.innerHTML = "";
+  detail.mediaLabel.textContent = "";
 }
 
 function setMilestone(id, jump) {
@@ -144,7 +166,12 @@ function setMilestone(id, jump) {
     card.classList.toggle("is-active", card.dataset.id === id);
   });
 
-  if (jump) document.getElementById("detailPanel").scrollIntoView({ behavior: "smooth", block: "start" });
+  if (jump) {
+    document.getElementById("detailPanel").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
 }
 
 function moveDecade(direction) {
@@ -154,6 +181,7 @@ function moveDecade(direction) {
 
 prevButton.addEventListener("click", () => moveDecade(-1));
 nextButton.addEventListener("click", () => moveDecade(1));
+
 track.addEventListener("keydown", (event) => {
   if (event.key === "ArrowLeft") moveDecade(-1);
   if (event.key === "ArrowRight") moveDecade(1);

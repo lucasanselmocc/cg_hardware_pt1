@@ -1,1 +1,1307 @@
-:root{--bg:#050713;--line:rgba(170,185,210,.20);--line-strong:rgba(170,185,210,.36);--text:#f5f7fb;--muted:#a9b6cc;--gold:#f6c445;--cyan:#7dd3fc;--shadow:0 34px 110px rgba(0,0,0,.46);--radius-xl:34px;--radius-lg:24px;--radius-md:18px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(circle at 10% 0%,rgba(125,211,252,.18),transparent 34rem),radial-gradient(circle at 90% 14%,rgba(246,196,69,.12),transparent 34rem),radial-gradient(circle at 55% 110%,rgba(167,139,250,.14),transparent 34rem),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}.background-grid{position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(circle at center,black,transparent 78%)}.hero,main,.footer{max-width:1280px;margin:0 auto}.hero{padding:76px 24px 28px}.eyebrow{margin:0 0 16px;color:var(--cyan);text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:900}h1{max-width:1080px;margin:0;font-size:clamp(2.7rem,7vw,7.2rem);line-height:.88;letter-spacing:-.075em}.question{max-width:900px;margin:28px 0 22px;color:#dce8fb;font-size:clamp(1.05rem,2vw,1.35rem)}.thesis-strip{display:flex;flex-wrap:wrap;gap:10px}.thesis-strip span{border:1px solid rgba(246,196,69,.24);background:linear-gradient(180deg,rgba(246,196,69,.12),rgba(255,255,255,.035));border-radius:999px;padding:9px 14px;color:var(--gold);font-weight:900;font-size:.88rem}main{padding:0 24px 56px}.carousel-shell,.decade-panel,.detail-panel,.footer{border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));box-shadow:var(--shadow);backdrop-filter:blur(18px)}.carousel-shell{border-radius:var(--radius-xl);padding:18px}.carousel-top{display:grid;grid-template-columns:46px 1fr 46px;gap:12px;align-items:center;margin-bottom:14px}.carousel-top p{margin:0;text-align:center;color:var(--gold);font-weight:950;letter-spacing:.08em}.arrow{width:46px;height:46px;border-radius:999px;border:1px solid var(--line-strong);background:rgba(255,255,255,.06);color:var(--text);cursor:pointer;font-size:2rem;line-height:1;transition:transform .2s ease,border-color .2s ease,background .2s ease}.arrow:hover{transform:scale(1.05);border-color:rgba(246,196,69,.55);background:rgba(246,196,69,.10)}.decade-track{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(310px,430px);gap:18px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:inline mandatory;scroll-padding-inline:12px;padding:8px 6px 18px;scrollbar-width:thin;scrollbar-color:rgba(246,196,69,.6) transparent}.decade-card{min-height:250px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,255,255,.025)),radial-gradient(circle at top left,var(--tone),transparent 26rem);color:var(--text);padding:22px;text-align:left;cursor:pointer;scroll-snap-align:center;position:relative;overflow:hidden;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.decade-card:hover{transform:translateY(-6px);border-color:rgba(246,196,69,.42)}.decade-card.is-active{border-color:rgba(246,196,69,.78);box-shadow:0 24px 90px rgba(246,196,69,.10)}.decade-card__decade{color:var(--gold);font-size:clamp(2.3rem,4vw,4.2rem);font-weight:950;letter-spacing:-.07em;line-height:1}.decade-card__arc{margin-top:10px;color:var(--cyan);font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;font-weight:900}.decade-card__headline{margin:12px 0 0;font-size:1.15rem;font-weight:900;max-width:330px}.decade-card__count{margin-top:16px;display:inline-flex;border:1px solid var(--line);background:rgba(0,0,0,.22);border-radius:999px;padding:7px 10px;color:var(--muted);font-size:.82rem;font-weight:800}.decade-panel{margin-top:22px;border-radius:var(--radius-xl);padding:28px}.panel-intro{display:grid;grid-template-columns:minmax(0,.95fr) minmax(280px,.7fr);gap:24px;align-items:end;padding-bottom:22px;border-bottom:1px solid var(--line)}.panel-kicker{margin:0 0 8px;color:var(--gold);text-transform:uppercase;letter-spacing:.14em;font-weight:950;font-size:.8rem}.panel-intro h2{margin:0;font-size:clamp(2rem,5vw,4.5rem);line-height:.95;letter-spacing:-.06em}.panel-intro>p{margin:0;color:var(--muted)}.bottleneck-card{margin:18px 0 28px;border:1px solid var(--line);background:rgba(0,0,0,.18);border-radius:var(--radius-md);padding:16px}.bottleneck-card span,.detail-fields h3{display:block;color:var(--cyan);text-transform:uppercase;letter-spacing:.12em;font-weight:950;font-size:.74rem;margin:0 0 8px}.bottleneck-card p,.detail-fields p{margin:0;color:var(--muted)}.milestone-sections{display:grid;gap:28px}.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin-bottom:12px}.section-title h3{margin:0;font-size:1rem;color:var(--cyan);text-transform:uppercase;letter-spacing:.13em}.section-title.primary-title h3{color:var(--gold)}.section-title p{margin:0;color:var(--muted);font-size:.86rem}.milestone-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.secondary-grid{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.milestone-card{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:22px;padding:16px;min-height:212px;color:var(--text);text-align:left;cursor:pointer;transition:transform .2s ease,border-color .2s ease,background .2s ease}.milestone-card:hover,.milestone-card.is-active{transform:translateY(-4px);border-color:rgba(125,211,252,.56);background:rgba(125,211,252,.09)}.milestone-card.primary{border-color:rgba(246,196,69,.38);background:linear-gradient(180deg,rgba(246,196,69,.14),rgba(255,255,255,.035))}.milestone-card.primary:hover,.milestone-card.primary.is-active{border-color:rgba(246,196,69,.85);box-shadow:0 24px 70px rgba(246,196,69,.09)}.card-type{display:inline-flex;border-radius:999px;padding:6px 9px;background:rgba(255,255,255,.06);color:var(--muted);font-weight:900;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}.primary .card-type{color:var(--gold);background:rgba(246,196,69,.12)}.card-year{margin:14px 0 4px;color:var(--gold);font-weight:950;letter-spacing:.03em}.milestone-card h4{margin:0;font-size:1.1rem;line-height:1.15}.milestone-card p{margin:10px 0 0;color:var(--muted);font-size:.92rem}.detail-panel{margin-top:22px;border-radius:var(--radius-xl);overflow:hidden;display:grid;grid-template-columns:minmax(360px,.92fr) minmax(420px,1fr)}.detail-copy{padding:28px}.detail-meta{margin:0 0 8px;color:var(--gold);text-transform:uppercase;letter-spacing:.14em;font-weight:950;font-size:.8rem}.detail-copy h2{margin:0;font-size:clamp(2rem,4vw,4rem);line-height:.95;letter-spacing:-.06em}.detail-role{color:var(--muted);margin:12px 0 0;font-size:1.04rem}.detail-fields{display:grid;gap:12px;margin-top:22px}.detail-fields article{border:1px solid var(--line);background:rgba(0,0,0,.18);border-radius:var(--radius-md);padding:16px}.media-shell{padding:22px;border-left:1px solid var(--line);background:rgba(0,0,0,.24);display:grid;align-content:center}.media-shell video{width:100%;border:1px solid var(--line);border-radius:24px;background:#020617;box-shadow:0 22px 80px rgba(0,0,0,.35)}.media-shell p{margin:12px 0 0;color:var(--muted);font-size:.9rem}.study-link{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(246,196,69,.55);background:rgba(246,196,69,.14);color:var(--gold);font-weight:950;text-decoration:none;border-radius:999px;padding:12px 18px}.study-link:hover{background:rgba(246,196,69,.22)}.link-card{border:1px solid var(--line);background:rgba(0,0,0,.18);border-radius:24px;padding:24px}.link-card h3{margin:0 0 10px;font-size:1.6rem}.link-card p{margin:0 0 18px;color:var(--muted)}.footer{margin:22px auto 0;padding:18px 22px;border-radius:var(--radius-lg);color:var(--muted)}.footer p{margin:0}@media(max-width:940px){.panel-intro,.detail-panel{grid-template-columns:1fr}.media-shell{border-left:none;border-top:1px solid var(--line)}.section-title{flex-direction:column;align-items:flex-start;gap:4px}}@media(max-width:640px){.hero{padding-top:54px}main{padding-inline:14px}.decade-track{grid-auto-columns:minmax(270px,86vw)}.decade-panel,.detail-copy,}@media(prefers-reduced-motion:reduce){*,html{scroll-behavior:auto!important;transition:none!important}}
+:root {
+  --bg: #ead39d;
+  --surface: #f6dfaa;
+  --surface-2: #e5c174;
+  --surface-3: #bd8735;
+  --text: #2b1b0b;
+  --muted: #6a4a21;
+  --accent: #a85a18;
+  --accent-2: #3e5f43;
+  --accent-3: #f7d879;
+  --screen: #10210d;
+  --phosphor: #7bff60;
+  --line: rgba(58, 35, 12, .50);
+  --line-strong: rgba(58, 35, 12, .86);
+  --shadow: 10px 10px 0 rgba(42, 25, 8, .22);
+  --soft-shadow: 0 18px 55px rgba(42, 25, 8, .18);
+  --radius-xl: 12px;
+  --radius-lg: 10px;
+  --radius-md: 7px;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "Courier New", Courier, monospace;
+  --texture-opacity: .25;
+  --scanline-opacity: .08;
+  --glow: 0 0 18px rgba(123, 255, 96, .20);
+  --panel-pattern: repeating-linear-gradient(0deg, rgba(255,255,255,.12) 0 1px, transparent 1px 7px);
+}
+
+/* 1950s: arquivo técnico quente, bege/amarelo. Claro de propósito. */
+body[data-decade="1950s"] {
+  --bg: #ead39d;
+  --surface: #f6dfaa;
+  --surface-2: #e5c174;
+  --surface-3: #bd8735;
+  --text: #2b1b0b;
+  --muted: #6a4a21;
+  --accent: #a85a18;
+  --accent-2: #3e5f43;
+  --accent-3: #f7d879;
+  --screen: #10210d;
+  --phosphor: #7bff60;
+  --line: rgba(58, 35, 12, .50);
+  --line-strong: rgba(58, 35, 12, .86);
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "Courier New", Courier, monospace;
+  --texture-opacity: .30;
+  --scanline-opacity: .07;
+}
+
+/* 1960s: âmbar/space-age, ainda quente, mas sem preto dominante. */
+body[data-decade="1960s"] {
+  --bg: #b66b28;
+  --surface: #d9953f;
+  --surface-2: #f0bd58;
+  --surface-3: #7f341f;
+  --text: #241204;
+  --muted: #4d240d;
+  --accent: #ffcd59;
+  --accent-2: #4f641e;
+  --accent-3: #f07832;
+  --screen: #241307;
+  --phosphor: #ffc45a;
+  --line: rgba(55, 22, 6, .58);
+  --line-strong: rgba(55, 22, 6, .88);
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "Courier New", Courier, monospace;
+  --texture-opacity: .20;
+  --scanline-opacity: .10;
+}
+
+/* 1970s: terminal CRT verde no preto. Tudo fica escuro. */
+body[data-decade="1970s"] {
+  --bg: #031008;
+  --surface: #061a0d;
+  --surface-2: #092512;
+  --surface-3: #17331f;
+  --text: #38ff70;
+  --muted: #8cffad;
+  --accent: #38ff70;
+  --accent-2: #c7ff6b;
+  --accent-3: #1f7f3a;
+  --screen: #020904;
+  --phosphor: #38ff70;
+  --line: rgba(56, 255, 112, .34);
+  --line-strong: rgba(56, 255, 112, .72);
+  --shadow: 0 0 0 8px #17331f, 0 0 36px rgba(56,255,112,.22), 12px 12px 0 rgba(0,0,0,.42);
+  --soft-shadow: 0 0 35px rgba(56,255,112,.20);
+  --font-display: "Courier New", Courier, monospace;
+  --font-body: "Courier New", Courier, monospace;
+  --texture-opacity: .10;
+  --scanline-opacity: .30;
+  --glow: 0 0 26px rgba(56, 255, 112, .34);
+}
+
+/* 1980s: PC/arcade, fundo escuro azulado com neon; sem painéis bege. */
+body[data-decade="1980s"] {
+  --bg: #08091f;
+  --surface: #12163a;
+  --surface-2: #171d4f;
+  --surface-3: #23285e;
+  --text: #e7f6ff;
+  --muted: #9bd5df;
+  --accent: #ff3aa8;
+  --accent-2: #00e5ff;
+  --accent-3: #ffe14d;
+  --screen: #02040a;
+  --phosphor: #00ff66;
+  --line: rgba(0, 229, 255, .34);
+  --line-strong: rgba(255, 58, 168, .70);
+  --shadow: 0 0 0 8px #0e1230, 0 0 32px rgba(0,229,255,.20), 12px 12px 0 rgba(0,0,0,.38);
+  --soft-shadow: 0 0 42px rgba(255,58,168,.16);
+  --font-display: "Arial Black", Impact, Haettenschweiler, sans-serif;
+  --font-body: "Courier New", Courier, monospace;
+  --texture-opacity: .08;
+  --scanline-opacity: .24;
+  --glow: 0 0 24px rgba(0, 229, 255, .28);
+}
+
+/* 1990s: desktop teal e janelas cinzas. Fundo teal escuro, painéis são cinza de GUI. */
+body[data-decade="1990s"] {
+  --bg: #007878;
+  --surface: #c0c0c0;
+  --surface-2: #d8d8d8;
+  --surface-3: #808080;
+  --text: #000000;
+  --muted: #252525;
+  --accent: #000080;
+  --accent-2: #008000;
+  --accent-3: #ffff00;
+  --screen: #000000;
+  --phosphor: #39ff14;
+  --line: rgba(0,0,0,.70);
+  --line-strong: rgba(0,0,0,.94);
+  --shadow: inset -3px -3px 0 #404040, inset 3px 3px 0 #ffffff, 8px 8px 0 rgba(0,0,0,.28);
+  --soft-shadow: 8px 8px 0 rgba(0,0,0,.22);
+  --font-display: "MS Sans Serif", Tahoma, Verdana, sans-serif;
+  --font-body: "MS Sans Serif", Tahoma, Verdana, sans-serif;
+  --texture-opacity: .04;
+  --scanline-opacity: .04;
+  --glow: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.55;
+  background:
+    radial-gradient(circle at 12% 5%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 28rem),
+    radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--accent-2) 18%, transparent), transparent 24rem),
+    var(--bg);
+  transition: background .28s ease, color .28s ease;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  opacity: var(--texture-opacity);
+  background-image:
+    repeating-linear-gradient(0deg, rgba(0,0,0,.16) 0 1px, transparent 1px 4px),
+    radial-gradient(circle, rgba(0,0,0,.18) 1px, transparent 1.8px);
+  background-size: 100% 5px, 19px 19px;
+  mix-blend-mode: multiply;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 51;
+  pointer-events: none;
+  opacity: var(--scanline-opacity);
+  background:
+    repeating-linear-gradient(0deg, rgba(0,0,0,.70) 0 1px, transparent 1px 3px),
+    radial-gradient(circle at center, transparent 48%, rgba(0,0,0,.38));
+}
+
+.background-grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .14;
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--accent) 28%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--accent-2) 22%, transparent) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(circle at center, black, transparent 74%);
+}
+
+body[data-decade="1970s"] .background-grid {
+  opacity: .28;
+  background-size: 28px 28px;
+}
+
+body[data-decade="1980s"] .background-grid {
+  opacity: .34;
+  background-size: 30px 30px;
+}
+
+body[data-decade="1990s"] .background-grid {
+  opacity: .11;
+  background-image:
+    linear-gradient(rgba(255,255,255,.22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.22) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.hero,
+main,
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 68px 24px 30px;
+  position: relative;
+}
+
+.hero::before {
+  content: "ACERVO TÉCNICO · HARDWARE GRÁFICO · CRT / FRAMEBUFFER / VGA / 3D";
+  display: inline-block;
+  margin-bottom: 18px;
+  border: 2px solid var(--line-strong);
+  background: var(--accent);
+  color: var(--surface);
+  padding: 6px 10px;
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0 rgba(0,0,0,.18);
+}
+
+body[data-decade="1970s"] .hero::before {
+  background: var(--screen);
+  color: var(--phosphor);
+  text-shadow: var(--glow);
+  border-color: var(--line-strong);
+}
+
+body[data-decade="1980s"] .hero::before {
+  background: #02040a;
+  color: var(--accent-2);
+  text-shadow: var(--glow);
+  border-color: var(--accent);
+}
+
+body[data-decade="1990s"] .hero::before {
+  background: #000080;
+  color: #ffffff;
+  border-color: #000000;
+  box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #ffffff;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .76rem;
+  font-weight: 900;
+}
+
+body[data-decade="1970s"] .eyebrow,
+body[data-decade="1980s"] .eyebrow {
+  text-shadow: var(--glow);
+}
+
+h1 {
+  max-width: 1080px;
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(2.7rem, 7vw, 7rem);
+  line-height: .88;
+  letter-spacing: -.055em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 rgba(255,255,255,.16), 4px 4px 0 rgba(0,0,0,.15);
+}
+
+body[data-decade="1970s"] h1 {
+  color: var(--phosphor);
+  text-shadow: var(--glow), 3px 3px 0 rgba(0,0,0,.70);
+}
+
+body[data-decade="1980s"] h1 {
+  color: #ffffff;
+  text-shadow:
+    3px 3px 0 var(--accent),
+    -2px -2px 0 var(--accent-2),
+    0 0 28px rgba(0,229,255,.26);
+}
+
+body[data-decade="1990s"] h1 {
+  color: #ffffff;
+  text-shadow: 3px 3px 0 #000080, 5px 5px 0 #000000;
+}
+
+.question {
+  max-width: 900px;
+  margin: 28px 0 22px;
+  color: var(--muted);
+  font-size: clamp(1.02rem, 2vw, 1.32rem);
+}
+
+body[data-decade="1970s"] .question,
+body[data-decade="1980s"] .question {
+  color: var(--muted);
+}
+
+body[data-decade="1990s"] .question {
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+.thesis-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.thesis-strip span {
+  border: 2px solid var(--line);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 9px 14px;
+  color: var(--accent);
+  font-weight: 900;
+  font-size: .88rem;
+  box-shadow: 3px 3px 0 rgba(0,0,0,.15);
+}
+
+body[data-decade="1970s"] .thesis-strip span {
+  border-color: var(--line-strong);
+  background: var(--screen);
+  color: var(--phosphor);
+  text-shadow: var(--glow);
+  border-radius: 0;
+}
+
+body[data-decade="1980s"] .thesis-strip span {
+  border-color: var(--accent-2);
+  background: #090d24;
+  color: var(--accent-2);
+  text-shadow: var(--glow);
+  border-radius: 0;
+}
+
+body[data-decade="1990s"] .thesis-strip span {
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+  border-color: #000000;
+  box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #ffffff;
+}
+
+main {
+  padding: 0 24px 56px;
+}
+
+.carousel-shell,
+.decade-panel,
+.detail-panel,
+.footer {
+  border: 3px double var(--line-strong);
+  background:
+    var(--panel-pattern),
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 94%, white 6%), var(--surface-2));
+  box-shadow: var(--shadow);
+}
+
+body[data-decade="1970s"] .carousel-shell,
+body[data-decade="1970s"] .decade-panel,
+body[data-decade="1970s"] .detail-panel,
+body[data-decade="1970s"] .footer {
+  border: 3px solid var(--line-strong);
+  background:
+    repeating-linear-gradient(0deg, rgba(56,255,112,.07) 0 1px, transparent 1px 4px),
+    var(--surface);
+  color: var(--phosphor);
+  text-shadow: var(--glow);
+}
+
+body[data-decade="1980s"] .carousel-shell,
+body[data-decade="1980s"] .decade-panel,
+body[data-decade="1980s"] .detail-panel,
+body[data-decade="1980s"] .footer {
+  border: 3px solid var(--line-strong);
+  background:
+    linear-gradient(135deg, rgba(255,58,168,.12), transparent 36%),
+    repeating-linear-gradient(0deg, rgba(0,229,255,.05) 0 1px, transparent 1px 4px),
+    var(--surface);
+  color: var(--text);
+}
+
+body[data-decade="1990s"] .carousel-shell,
+body[data-decade="1990s"] .decade-panel,
+body[data-decade="1990s"] .detail-panel,
+body[data-decade="1990s"] .footer {
+  border-style: solid;
+  border-width: 2px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.carousel-shell {
+  border-radius: var(--radius-xl);
+  padding: 18px;
+}
+
+.carousel-top {
+  display: grid;
+  grid-template-columns: 46px 1fr 46px;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.carousel-top p {
+  margin: 0;
+  text-align: center;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-weight: 950;
+  letter-spacing: .08em;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+body[data-decade="1970s"] .carousel-top p {
+  color: var(--phosphor);
+}
+
+body[data-decade="1980s"] .carousel-top p {
+  color: var(--accent-2);
+  text-shadow: var(--glow);
+}
+
+body[data-decade="1990s"] .carousel-top p {
+  background: #000080;
+  color: #ffffff;
+  padding: 8px;
+  box-shadow: inset -2px -2px 0 #000000, inset 2px 2px 0 #3d77ff;
+}
+
+.arrow {
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  border: 2px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+  font-family: var(--font-body);
+  box-shadow: 4px 4px 0 rgba(0,0,0,.18);
+  transition: transform .14s ease, box-shadow .14s ease, background .18s ease;
+}
+
+.arrow:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 rgba(0,0,0,.24);
+  background: var(--accent);
+  color: var(--surface);
+}
+
+body[data-decade="1970s"] .arrow {
+  border-color: var(--phosphor);
+  background: var(--screen);
+  color: var(--phosphor);
+  text-shadow: var(--glow);
+}
+
+body[data-decade="1980s"] .arrow {
+  border-color: var(--accent-2);
+  background: #090d24;
+  color: var(--accent-2);
+  text-shadow: var(--glow);
+}
+
+body[data-decade="1990s"] .arrow {
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+  box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #ffffff;
+}
+
+.decade-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(310px, 430px);
+  gap: 18px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 12px;
+  padding: 8px 6px 18px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+.decade-card {
+  min-height: 250px;
+  border: 2px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.16), transparent 38%),
+    radial-gradient(circle at top left, var(--tone), transparent 25rem),
+    var(--surface);
+  color: var(--text);
+  padding: 22px;
+  text-align: left;
+  cursor: pointer;
+  scroll-snap-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 6px 6px 0 rgba(0,0,0,.17);
+  transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease, background .18s ease;
+}
+
+.decade-card::before {
+  content: "";
+  position: absolute;
+  inset: 13px;
+  border: 1px dashed color-mix(in srgb, var(--line-strong) 70%, transparent);
+  pointer-events: none;
+}
+
+.decade-card::after {
+  content: "REGISTRO";
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  transform: rotate(-7deg);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 3px 8px;
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  opacity: .62;
+}
+
+.decade-card:hover,
+.decade-card.is-active {
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0 rgba(0,0,0,.24);
+  border-color: var(--accent);
+}
+
+.decade-card.is-active {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.18), transparent 38%),
+    radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 22%, transparent), transparent 26rem),
+    var(--surface);
+}
+
+body[data-decade="1970s"] .decade-card {
+  border-color: var(--line);
+  background:
+    repeating-linear-gradient(0deg, rgba(56,255,112,.08) 0 1px, transparent 1px 4px),
+    var(--screen);
+  color: var(--phosphor);
+  text-shadow: var(--glow);
+  border-radius: 0;
+}
+
+body[data-decade="1980s"] .decade-card {
+  border-color: var(--line);
+  background:
+    linear-gradient(135deg, rgba(255,58,168,.13), transparent 38%),
+    #090d24;
+  color: var(--text);
+  border-radius: 0;
+}
+
+body[data-decade="1970s"] .decade-card::before,
+body[data-decade="1980s"] .decade-card::before {
+  border-color: var(--line);
+}
+
+body[data-decade="1970s"] .decade-card::after {
+  content: "CRT";
+  color: var(--phosphor);
+  border-color: var(--phosphor);
+}
+
+body[data-decade="1980s"] .decade-card::after {
+  content: "RGB";
+  color: var(--accent-2);
+  border-color: var(--accent);
+}
+
+body[data-decade="1990s"] .decade-card {
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+  border-color: #000000;
+  box-shadow: inset -3px -3px 0 #404040, inset 3px 3px 0 #ffffff;
+}
+
+body[data-decade="1990s"] .decade-card::before {
+  border-style: solid;
+  border-color: rgba(0,0,0,.28);
+}
+
+body[data-decade="1990s"] .decade-card::after {
+  content: "WIN";
+  color: #000080;
+  border-color: #000080;
+  transform: rotate(0);
+}
+
+.decade-card__decade {
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 4.4rem);
+  font-weight: 950;
+  letter-spacing: -.07em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+body[data-decade="1970s"] .decade-card__decade {
+  color: var(--phosphor);
+}
+
+body[data-decade="1980s"] .decade-card__decade {
+  color: #ffffff;
+  text-shadow: 2px 2px 0 var(--accent), -1px -1px 0 var(--accent-2);
+}
+
+body[data-decade="1990s"] .decade-card__decade {
+  color: #000080;
+}
+
+.decade-card__arc {
+  margin-top: 10px;
+  color: var(--accent-2);
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+  font-weight: 900;
+}
+
+body[data-decade="1970s"] .decade-card__arc {
+  color: var(--muted);
+}
+
+body[data-decade="1980s"] .decade-card__arc {
+  color: var(--accent-2);
+}
+
+.decade-card__headline {
+  margin: 14px 0 0;
+  font-size: 1.15rem;
+  font-weight: 900;
+  max-width: 330px;
+}
+
+.decade-card__count {
+  margin-top: 16px;
+  display: inline-flex;
+  border: 2px solid var(--line);
+  background: color-mix(in srgb, var(--surface-2) 45%, transparent);
+  border-radius: 999px;
+  padding: 7px 10px;
+  color: var(--muted);
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+body[data-decade="1970s"] .decade-card__count {
+  border-color: var(--phosphor);
+  background: #000000;
+  color: var(--phosphor);
+  border-radius: 0;
+}
+
+body[data-decade="1980s"] .decade-card__count {
+  border-color: var(--accent-2);
+  background: #050714;
+  color: var(--accent-2);
+  border-radius: 0;
+}
+
+body[data-decade="1990s"] .decade-card__count {
+  border-radius: 0;
+  background: #ffffff;
+  color: #000000;
+}
+
+.decade-panel {
+  margin-top: 22px;
+  border-radius: var(--radius-xl);
+  padding: 28px;
+}
+
+.panel-intro {
+  display: grid;
+  grid-template-columns: minmax(0,.95fr) minmax(280px,.7fr);
+  gap: 24px;
+  align-items: end;
+  padding-bottom: 22px;
+  border-bottom: 2px solid var(--line);
+}
+
+.panel-kicker {
+  margin: 0 0 8px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-weight: 950;
+  font-size: .8rem;
+}
+
+body[data-decade="1970s"] .panel-kicker {
+  color: var(--phosphor);
+}
+
+body[data-decade="1980s"] .panel-kicker {
+  color: var(--accent-2);
+}
+
+body[data-decade="1990s"] .panel-kicker {
+  color: #000080;
+}
+
+.panel-intro h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 4.45rem);
+  line-height: .95;
+  letter-spacing: -.055em;
+  text-transform: uppercase;
+}
+
+.panel-intro > p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.bottleneck-card {
+  margin: 18px 0 28px;
+  border: 2px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+body[data-decade="1970s"] .bottleneck-card {
+  border-color: var(--line);
+  background: var(--screen);
+  border-radius: 0;
+}
+
+body[data-decade="1980s"] .bottleneck-card {
+  border-color: var(--line);
+  background: #0a0d25;
+  border-radius: 0;
+}
+
+body[data-decade="1990s"] .bottleneck-card {
+  border-radius: 0;
+  background: #ffffff;
+  box-shadow: inset -2px -2px 0 #808080, inset 2px 2px 0 #ffffff;
+}
+
+.bottleneck-card span,
+.detail-fields h3 {
+  display: block;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 950;
+  font-size: .74rem;
+  margin: 0 0 8px;
+}
+
+body[data-decade="1970s"] .bottleneck-card span,
+body[data-decade="1970s"] .detail-fields h3 {
+  color: var(--phosphor);
+}
+
+body[data-decade="1980s"] .bottleneck-card span,
+body[data-decade="1980s"] .detail-fields h3 {
+  color: var(--accent-2);
+}
+
+.bottleneck-card p,
+.detail-fields p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.milestone-sections {
+  display: grid;
+  gap: 28px;
+}
+
+.section-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+
+.section-title h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: .13em;
+}
+
+.section-title.primary-title h3 {
+  color: var(--accent);
+}
+
+body[data-decade="1970s"] .section-title h3,
+body[data-decade="1970s"] .section-title.primary-title h3 {
+  color: var(--phosphor);
+}
+
+body[data-decade="1980s"] .section-title h3,
+body[data-decade="1980s"] .section-title.primary-title h3 {
+  color: var(--accent-2);
+}
+
+body[data-decade="1990s"] .section-title h3,
+body[data-decade="1990s"] .section-title.primary-title h3 {
+  color: #000080;
+}
+
+.section-title p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .86rem;
+}
+
+.milestone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 14px;
+}
+
+.secondary-grid {
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+}
+
+.milestone-card {
+  border: 2px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 78%, white 10%);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  min-height: 212px;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 rgba(0,0,0,.14);
+  transition: transform .14s ease, border-color .14s ease, background .18s ease, box-shadow .14s ease;
+}
+
+.milestone-card:hover,
+.milestone-card.is-active {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 rgba(0,0,0,.22);
+  border-color: var(--accent-2);
+  background: color-mix(in srgb, var(--surface) 88%, white 8%);
+}
+
+.milestone-card.primary {
+  border-color: color-mix(in srgb, var(--accent) 72%, black 10%);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--accent-3) 18%, transparent), transparent 60%),
+    color-mix(in srgb, var(--surface) 80%, white 8%);
+}
+
+body[data-decade="1970s"] .milestone-card {
+  border-color: var(--line);
+  background: var(--screen);
+  color: var(--phosphor);
+  border-radius: 0;
+  box-shadow: 0 0 18px rgba(56,255,112,.14);
+}
+
+body[data-decade="1970s"] .milestone-card.primary {
+  border-color: var(--phosphor);
+  background:
+    repeating-linear-gradient(0deg, rgba(56,255,112,.09) 0 1px, transparent 1px 4px),
+    #020904;
+}
+
+body[data-decade="1980s"] .milestone-card {
+  border-color: rgba(0,229,255,.36);
+  background: #090d24;
+  color: var(--text);
+  border-radius: 0;
+  box-shadow: 0 0 18px rgba(0,229,255,.10);
+}
+
+body[data-decade="1980s"] .milestone-card.primary {
+  border-color: var(--accent);
+  background:
+    linear-gradient(135deg, rgba(255,58,168,.16), transparent 46%),
+    #090d24;
+}
+
+body[data-decade="1990s"] .milestone-card {
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+  border-color: #000000;
+  box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #ffffff;
+}
+
+body[data-decade="1990s"] .milestone-card.primary {
+  background: #ffffcc;
+}
+
+.card-type {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface-2) 48%, transparent);
+  color: var(--muted);
+  font-weight: 900;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.primary .card-type {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent-3) 18%, transparent);
+}
+
+body[data-decade="1970s"] .card-type,
+body[data-decade="1970s"] .primary .card-type {
+  border-color: var(--phosphor);
+  background: transparent;
+  color: var(--phosphor);
+  border-radius: 0;
+}
+
+body[data-decade="1980s"] .card-type,
+body[data-decade="1980s"] .primary .card-type {
+  border-color: var(--accent-2);
+  background: transparent;
+  color: var(--accent-2);
+  border-radius: 0;
+}
+
+body[data-decade="1990s"] .card-type {
+  border-radius: 0;
+  background: #000080;
+  color: #ffffff;
+}
+
+.card-year {
+  margin: 14px 0 4px;
+  color: var(--accent);
+  font-weight: 950;
+  letter-spacing: .03em;
+}
+
+body[data-decade="1970s"] .card-year {
+  color: var(--phosphor);
+}
+
+body[data-decade="1980s"] .card-year {
+  color: var(--accent-3);
+}
+
+body[data-decade="1990s"] .card-year {
+  color: #000080;
+}
+
+.milestone-card h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  line-height: 1.15;
+}
+
+.milestone-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.detail-panel {
+  margin-top: 22px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(360px,.92fr) minmax(420px,1fr);
+}
+
+.detail-copy {
+  padding: 28px;
+}
+
+.detail-meta {
+  margin: 0 0 8px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-weight: 950;
+  font-size: .8rem;
+}
+
+body[data-decade="1970s"] .detail-meta {
+  color: var(--phosphor);
+}
+
+body[data-decade="1980s"] .detail-meta {
+  color: var(--accent-2);
+}
+
+body[data-decade="1990s"] .detail-meta {
+  color: #000080;
+}
+
+.detail-copy h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem,4vw,4rem);
+  line-height: .95;
+  letter-spacing: -.055em;
+  text-transform: uppercase;
+}
+
+.detail-role {
+  color: var(--muted);
+  margin: 12px 0 0;
+  font-size: 1.04rem;
+}
+
+.detail-fields {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.detail-fields article {
+  border: 2px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+body[data-decade="1970s"] .detail-fields article {
+  border-color: var(--line);
+  background: var(--screen);
+  border-radius: 0;
+}
+
+body[data-decade="1980s"] .detail-fields article {
+  border-color: rgba(0,229,255,.34);
+  background: #090d24;
+  border-radius: 0;
+}
+
+body[data-decade="1990s"] .detail-fields article {
+  border-radius: 0;
+  background: #ffffff;
+  box-shadow: inset -2px -2px 0 #808080, inset 2px 2px 0 #ffffff;
+}
+
+.media-shell {
+  padding: 22px;
+  border-left: 2px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.08), rgba(255,255,255,.08)),
+    var(--surface-2);
+  display: grid;
+  align-content: center;
+}
+
+body[data-decade="1970s"] .media-shell {
+  border-left-color: var(--line);
+  background:
+    radial-gradient(circle at center, rgba(56,255,112,.11), transparent 55%),
+    #000000;
+}
+
+body[data-decade="1980s"] .media-shell {
+  border-left-color: rgba(0,229,255,.34);
+  background:
+    radial-gradient(circle at center, rgba(255,58,168,.10), transparent 55%),
+    #060816;
+}
+
+body[data-decade="1990s"] .media-shell {
+  background: #808080;
+  border-left-color: #000000;
+}
+
+.media-shell video {
+  width: 100%;
+  border: 3px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  background: var(--screen);
+  box-shadow: var(--soft-shadow);
+  filter: sepia(.14) contrast(.95) saturate(.90);
+}
+
+body[data-decade="1970s"] .media-shell video {
+  border-color: var(--phosphor);
+  border-radius: 0;
+  filter: sepia(.35) hue-rotate(62deg) saturate(1.2) contrast(1.05);
+  box-shadow: 0 0 28px rgba(56,255,112,.25);
+}
+
+body[data-decade="1980s"] .media-shell video {
+  border-color: var(--accent-2);
+  border-radius: 0;
+  filter: saturate(1.15) contrast(1.05);
+  box-shadow: 0 0 28px rgba(0,229,255,.22);
+}
+
+body[data-decade="1990s"] .media-shell video {
+  border-radius: 0;
+  border-color: #000000;
+  filter: saturate(.85) contrast(.95);
+}
+
+.media-shell p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.study-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent);
+  background: var(--accent);
+  color: var(--surface);
+  font-weight: 950;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  box-shadow: 4px 4px 0 rgba(0,0,0,.16);
+}
+
+.study-link:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 rgba(0,0,0,.22);
+}
+
+body[data-decade="1970s"] .study-link {
+  border-color: var(--phosphor);
+  background: #000000;
+  color: var(--phosphor);
+  border-radius: 0;
+  text-shadow: var(--glow);
+}
+
+body[data-decade="1980s"] .study-link {
+  border-color: var(--accent-2);
+  background: #090d24;
+  color: var(--accent-2);
+  border-radius: 0;
+  text-shadow: var(--glow);
+}
+
+body[data-decade="1990s"] .study-link {
+  border-radius: 0;
+  background: #c0c0c0;
+  color: #000000;
+  border-color: #000000;
+  box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #ffffff;
+}
+
+.link-card {
+  border: 2px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 80%, white 8%);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: 5px 5px 0 rgba(0,0,0,.13);
+}
+
+body[data-decade="1970s"] .link-card {
+  border-color: var(--phosphor);
+  background: #000000;
+  border-radius: 0;
+}
+
+body[data-decade="1980s"] .link-card {
+  border-color: var(--accent-2);
+  background: #090d24;
+  border-radius: 0;
+}
+
+body[data-decade="1990s"] .link-card {
+  border-radius: 0;
+  background: #c0c0c0;
+  box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #ffffff;
+}
+
+.link-card h3 {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+}
+
+.link-card p {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.footer {
+  margin: 22px auto 0;
+  padding: 18px 22px;
+  border-radius: var(--radius-lg);
+  color: var(--muted);
+}
+
+.footer p {
+  margin: 0;
+}
+
+body[data-decade="1990s"] .carousel-shell,
+body[data-decade="1990s"] .decade-panel,
+body[data-decade="1990s"] .detail-panel,
+body[data-decade="1990s"] .footer,
+body[data-decade="1990s"] .decade-card,
+body[data-decade="1990s"] .milestone-card,
+body[data-decade="1990s"] .detail-fields article,
+body[data-decade="1990s"] .bottleneck-card,
+body[data-decade="1990s"] .link-card {
+  border-radius: 0;
+}
+
+@media (max-width: 940px) {
+  .panel-intro,
+  .detail-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .media-shell {
+    border-left: none;
+    border-top: 2px solid var(--line);
+  }
+
+  .section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 48px 16px 24px;
+  }
+
+  main {
+    padding-inline: 14px;
+  }
+
+  .carousel-shell,
+  .decade-panel,
+  .detail-copy,
+  .media-shell {
+    padding: 16px;
+  }
+
+  .decade-track {
+    grid-auto-columns: minmax(270px, 86vw);
+  }
+
+  .carousel-top {
+    grid-template-columns: 42px 1fr 42px;
+  }
+
+  .arrow {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  html {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
